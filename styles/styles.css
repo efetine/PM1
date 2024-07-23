@@ -1,0 +1,74 @@
+body {
+  background-color: black;
+  color: white;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+h1 {
+  background-color: rgb(213, 206, 198);
+  text-align: center;
+  font-size: 3rem;
+  color: rgb(228, 169, 80);
+  width: 100vw;
+}
+h2 {
+  color: antiquewhite;
+  text-align: center;
+}
+p {
+  text-align: center;
+  font-size: 1rem;
+  color: antiquewhite;
+}
+
+#about-me {
+  display: flex;
+  flex-direction: column;
+}
+
+#imgPrincipal {
+  margin: 0 24rem;
+}
+
+#form {
+  border: 5px dotted rgb(200, 150, 100);
+  padding: 5rem;
+  background-color: antiquewhite;
+  color: black;
+  font-size: 1rem;
+}
+
+#container-imagenes {
+  display: flex;
+  gap: 4rem;
+}
+
+.tecnologia {
+  width: 12rem;
+  height: 12rem;
+  border: 0.25rem solid rgb(151, 121, 89);
+  object-fit: cover;
+}
+
+.tecnologia:hover {
+  width: 15rem;
+  height: 15rem;
+  border: 0.25rem solid rgb(77, 48, 18);
+  transition-property: width, height;
+  transition-duration: 1s, 2s;
+  box-shadow: 0.5rem 0.25rem rgba(255, 255, 255, 0.1);
+}
+
+section {
+  margin-bottom: 3rem;
+}
+
+button {
+  width: 8rem;
+  height: 2rem;
+  border-radius: 0.5rem;
+  color: white;
+  background-color: black;
+  border: 0.25rem solid moccasin;
+}

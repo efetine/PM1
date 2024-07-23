@@ -1,11 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <h1>Proyecto M1</h1>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/reset.css" />
+    <link rel="stylesheet" href="./styles/styles.css" />
+    <script src="./scripts/index.js"></script>
+    <title>Pagina web de modulo uno</title>
+  </head>
+  <body>
+    <section id="about-me">
+      <h1>Sobre mi</h1>
+      <p>Me llamo florencia y me gusta programar, los juegos y los gatxs</p>
+      <img
+        id="imgPrincipal"
+        src="https://i.pinimg.com/564x/96/bf/de/96bfde0e266c6319c21fbe293b1e1e38.jpg"
+        alt="Un gato enojado"
+      />
+    </section>
+
+    <section>
+      <h2>Mis Tecnologias Favoritas</h2>
+      <div id="container-imagenes">
+        <img
+          class="tecnologia"
+          src="https://i.pinimg.com/564x/fd/42/af/fd42af8a3cacf086abbcf7bf874eb24d.jpg"
+          alt="logo de javascript"
+        />
+        <img
+          class="tecnologia"
+          src="https://i.pinimg.com/564x/04/15/29/041529fefa51c23f7c2171e033147f0e.jpg"
+          alt="logo de html"
+        />
+        <img
+          class="tecnologia"
+          src="https://i.pinimg.com/564x/de/d1/0e/ded10e20fb9773d2a41124c49c68839e.jpg"
+          alt="logo de css"
+        />
+        <img
+          class="tecnologia"
+          src="https://i.pinimg.com/564x/e5/9a/52/e59a522e5010613ae986ede14b8916a3.jpg"
+          alt="logo de java"
+        />
+      </div>
+    </section>
+
+    <section id="form">
+      <form>
+        <div>
+          <label for="title">Titulo</label>
+          <input type="text" id="title" />
+        </div>
+        <div>
+          <label for="description">Descripcion</label>
+          <input type="text" id="description" />
+        </div>
+        <div>
+          <label for="img">Url de imagen</label>
+          <input type="text" id="img" />
+        </div>
+        <button type="submit">Crear</button>
+      </form>
+    </section>
+  </body>
 </html>
