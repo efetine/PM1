@@ -6,52 +6,124 @@ body {
   flex-direction: column;
 }
 h1 {
-  background-color: rgb(213, 206, 198);
+  background-color: rgb(32, 28, 23);
   text-align: center;
   font-size: 3rem;
   color: rgb(228, 169, 80);
   width: 100vw;
+  font-family: "Segoe UI";
 }
 h2 {
-  color: antiquewhite;
+  background-color: rgb(32, 28, 23);
   text-align: center;
+  font-size: 3rem;
+  color: rgb(228, 169, 80);
+  width: 100vw;
+  font-family: "Segoe UI";
 }
 p {
   text-align: center;
+  font-size: 0.1rem;
+  color: rgb(240, 240, 220);
+  font: oblique bold 120% cursive;
+}
+
+h3 {
   font-size: 1rem;
-  color: antiquewhite;
+  font: oblique bold 120% cursive;
+}
+
+#about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgb(173, 168, 161);
+  width: 100vw;
+  padding-bottom: 1rem;
 }
 
 #about-me {
   display: flex;
+  justify-content: center;
+  align-items: center;
   flex-direction: column;
+  border-radius: 2rem;
+  background-color: rgb(33, 30, 25);
+  width: 90%;
+  padding: 2rem;
 }
 
-#imgPrincipal {
-  margin: 0 24rem;
+#img-primary {
+  border-radius: 1rem;
 }
 
 #form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
   border: 5px dotted rgb(200, 150, 100);
   padding: 5rem;
   background-color: antiquewhite;
   color: black;
   font-size: 1rem;
+  box-shadow: 0 0 10px #ffffff;
+  border-radius: 1rem;
 }
 
-#container-imagenes {
+.text-form {
   display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-size: 1rem;
+  font: oblique bold 120% cursive;
+}
+
+.button-send {
+  margin-top: 0.5rem;
+  height: 3rem;
+  width: 15rem;
+  border: 2px solid black;
+  border-radius: 12px;
+  background-color: #000000;
+  box-shadow: 0 0 10px #4a4943;
+  color: #ffffff;
+  font-size: 1.2em;
+  margin-left: 0.2rem;
+  margin-right: 0.2rem;
+  margin-bottom: 0.2rem;
+}
+
+.inputForm {
+  margin-top: 0.5rem;
+  height: 2rem;
+  width: 30rem;
+  border: 2px solid rgb(99, 81, 6);
+  border-radius: 0.5rem;
+  background-color: #b9ac9a;
+  box-shadow: 0 0 10px #fcbd2a;
+  color: #0b0b0b;
+  font-size: 1.2em;
+  margin-left: 0.2rem;
+  margin-right: 0.2rem;
+  margin-bottom: 0.2rem;
+}
+
+#technologies {
+  display: flex;
+  justify-content: center;
   gap: 4rem;
 }
 
-.tecnologia {
+.technology {
   width: 12rem;
   height: 12rem;
   border: 0.25rem solid rgb(151, 121, 89);
   object-fit: cover;
 }
 
-.tecnologia:hover {
+.technology:hover {
   width: 15rem;
   height: 15rem;
   border: 0.25rem solid rgb(77, 48, 18);
@@ -61,7 +133,11 @@ p {
 }
 
 section {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
   margin-bottom: 3rem;
+  width: 100%;
 }
 
 button {
@@ -71,4 +147,42 @@ button {
   color: white;
   background-color: black;
   border: 0.25rem solid moccasin;
+}
+
+#activities {
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  margin: 0 1rem;
+}
+
+.card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: rgb(74, 69, 59);
+  border-radius: 0.25rem;
+  color: black;
+  padding: 0.5rem;
+}
+.card-description {
+  align-self: flex-start;
+  width: 20ch;
+  overflow-x: hidden;
+  text-overflow: ellipsis;
+}
+
+.card-image {
+  width: 12rem;
+  height: 12rem;
+  object-fit: cover;
+  border-radius: 0.25rem;
+}
+
+.card-button {
+  width: 2rem;
+  align-self: flex-end;
+  border: 0;
+  background-color: darkred;
 }
